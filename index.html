@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Tennis Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🎾 AI Tennis Stroke Analysis</h1>
+
+  <p>
+    This project compares user tennis strokes with professional players
+    using 4D-Humans + pose estimation + joint angle analysis.
+  </p>
+
+  <hr>
+
+  <h2>🔥 Demo Video (User vs Pro)</h2>
+
+  <video width="800" controls>
+    <source src="videos/demo1.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <hr>
+
+  <h2>📊 Results</h2>
+
+  <img src="images/heatmap.png" width="600">
+
+  <hr>
+
+  <h2>⚙️ Pipeline</h2>
+
+  <pre>
+Video → 4D-Humans → SMPL Mesh → Joint Extraction
+      → DTW Alignment → Angle Comparison → Visualization
+  </pre>
+
+</body>
+</html>
